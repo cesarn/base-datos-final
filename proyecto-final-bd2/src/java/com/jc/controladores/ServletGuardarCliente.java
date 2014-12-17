@@ -30,11 +30,11 @@ public class ServletGuardarCliente extends HttpServlet {
     String nombre=    request.getParameter("nombre");
      String telefono=    request.getParameter("telefono");
       String direccion=    request.getParameter("direccion");
-       String marca_cel=    request.getParameter("marca_cel");
+       String marca_auto=    request.getParameter("marca_auto");
         try {
-            DAOCliente.guardarCliente(nombre,telefono, direccion, marca_cel);
+            DAOCliente.guardarCliente(nombre,telefono, direccion, marca_auto);
         } catch (Exception ex) {
-            Logger.getLogger(ServletGuardarCelular.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ServletGuardarAuto.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

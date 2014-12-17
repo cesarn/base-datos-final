@@ -6,7 +6,7 @@
 
 package com.jc.controladores;
 
-import com.jc.model.DAOUsuario;
+import com.jc.model.*;
 import com.jc.model.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,14 +21,14 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author daton
  */
-public class ServletBuscarUsuarios extends HttpServlet {
+public class ServletBuscarAuto extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            for( Usuario u:DAOUsuario.buscarTodos()  ){
+            for( Usuario u:DAOAuto.buscarTodos()  ){
                 out.println(u.getLogin());
             }
           } catch (Exception ex) {  }

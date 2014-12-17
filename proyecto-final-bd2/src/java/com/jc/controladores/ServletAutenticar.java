@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author campitos
+ * @author CESAR
  */
 public class ServletAutenticar extends HttpServlet {
 

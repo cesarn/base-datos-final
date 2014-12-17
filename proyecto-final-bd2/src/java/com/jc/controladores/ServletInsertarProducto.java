@@ -6,8 +6,7 @@
 
 package com.jc.controladores;
 
-import com.jc.model.DAOUsuario;
-import com.jc.model.Usuario;
+import com.jc.model.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
@@ -21,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author campitos
  */
-public class ServletInsertarUsuario extends HttpServlet {
+public class ServletInsertarProducto extends HttpServlet {
 
   
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

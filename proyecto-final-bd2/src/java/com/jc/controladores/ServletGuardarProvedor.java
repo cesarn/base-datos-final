@@ -30,7 +30,7 @@ public class ServletGuardarProvedor extends HttpServlet {
         try {
             DAOProvedor.guardarProvedor(cantidad_pro,marca_pro,modelo);
         } catch (Exception ex) {
-            Logger.getLogger(ServletGuardarCelular.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ServletGuardarAuto.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         

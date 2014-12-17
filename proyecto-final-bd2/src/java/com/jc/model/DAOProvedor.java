@@ -26,6 +26,6 @@ public class DAOProvedor {
       
         callate.execute();
         int pk=callate.getInt(1);
-        return "Se guardo celular con id:"+pk;
+        return "Se guardo el pedido con el id:"+pk;
 }
 }

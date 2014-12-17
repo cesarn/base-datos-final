@@ -10,9 +10,9 @@ package com.jc.model;
  *
  * @author T-205
  */
-public class Celular {
+public class Auto {
 
-    static void add(Celular p) {
+    static void add(Auto p) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
    private Integer id_cel;
@@ -29,10 +29,10 @@ public class Celular {
    
    
    
-    public Celular() {
+    public Auto() {
     }
 
-    public Celular(Integer id_cel, String marca_cel, String modelo, String precio, String compania) {
+    public Auto(Integer id_cel, String marca_cel, String modelo, String precio, String compania) {
         this.id_cel = id_cel;
         this.marca_cel = marca_cel;
         this.modelo = modelo;
